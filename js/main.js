@@ -8,75 +8,115 @@ document.addEventListener("DOMContentLoaded", () => {
     const confirmationMessage = 'Are you sure you want to reset? Your changes will be lost.';
 
     // default template
-    const defaultInput = `# Markdown syntax guide
+    const defaultInput = `# Evan's Markdown Guide
 
-## Headers
+Welcome to my Markdown Preview Tool!  
+I'm **Evan**, a software developer passionate about creating useful tools and sharing knowledge.  
+Visit my tech blog 👉 [evanzhao119.github.io](https://evanzhao119.github.io/)
 
-# This is a Heading h1
-## This is a Heading h2
-###### This is a Heading h6
+---
 
-## Emphasis
+## 📌 Headers
 
-*This text will be italic*  
-_This will also be italic_
+# H1 Header
+## H2 Header
+### H3 Header
+#### H4 Header
+##### H5 Header
+###### H6 Header
 
-**This text will be bold**  
-__This will also be bold__
+---
+
+## ✨ Emphasis
+
+*Italic Text*  
+_Italic Text (alternate syntax)_
+
+**Bold Text**  
+__Bold Text (alternate syntax)__
 
 _You **can** combine them_
 
-## Lists
+---
 
-### Unordered
+## 📋 Lists
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-    * Item 3a
-    * Item 3b
+### Unordered List
+- Item A
+- Item B
+  - Sub-item B1
+  - Sub-item B2
 
-### Ordered
+### Ordered List
+1. First item
+2. Second item
+   1. Sub-item
+   2. Sub-item
 
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Item 3a
-    2. Item 3b
+---
 
-## Images
+## 🖼️ Images
 
-![This is an alt text.](/image/sample.webp "This is a sample image.")
+![Sample image](https://evanzhao119.github.io/assets/sample.png "Optional title")
 
-## Links
+---
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+## 🔗 Links
 
-## Blockquotes
+- [My Blog](https://evanzhao119.github.io/)
+- [Markdown Guide](https://www.markdownguide.org/)
 
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+---
 
-## Tables
+## 💬 Blockquotes
 
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
+> This is a blockquote.  
+> Markdown is lightweight and easy to learn.
 
-## Blocks of code
+> Nested blockquote:
+>> This is a quote inside a quote.
 
-${"`"}${"`"}${"`"}
-let message = 'Hello world';
-alert(message);
-${"`"}${"`"}${"`"}
+---
 
-## Inline code
+## 📊 Tables
 
-This web site is using ${"`"}markedjs/marked${"`"}.
+| Name       | Role           | Location    |
+|------------|----------------|-------------|
+| Evan       | Developer      | Canada      |
+| GitHub     | Tech Blog Host | Online      |
+
+---
+
+## 🔢 Code Blocks
+
+\`\`\`javascript
+// Hello World in JavaScript
+console.log("Hello, Evan!");
+\`\`\`
+
+\`\`\`python
+# Hello World in Python
+print("Hello, Evan!")
+\`\`\`
+
+---
+
+## 📌 Inline Code
+
+Use the \`console.log()\` function to print output in JavaScript.
+
+---
+
+## ✅ Task Lists
+
+- [x] Create Markdown Preview Tool
+- [ ] Publish a new blog post
+- [ ] Add dark mode support
+
+---
+
+Thanks for using this tool!  
+Feel free to fork or star it on [GitHub](https://github.com/evanzhao119).
 `;
 
     let setupEditor = () => {
